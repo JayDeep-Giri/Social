@@ -24,3 +24,85 @@ body {
     overflow: hidden;
     transition: 1s;
 }
+
+/* Header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 1000;
+}
+
+.header-left,
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+/* Header-Left */
+.logo {
+    font-size: 2rem;
+    color: var(--light);
+    letter-spacing: 1px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+}
+
+.nav li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav li a {
+    color: var(--light);
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav li:hover a {
+    color: var(--primaryHover);
+}
+
+/* Header-Right */
+.signin {
+    font-size: 1rem;
+    color: var(--light);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 25px;
+    background: var(--primary);
+    border-radius: 30px 50px 0 30px;
+    transition: 0.3s;
+}
+.signin:hover {
+    background: var(--primaryHover);
+}
+
+.icon-light {
+    font-size: 1.6rem;
+    color: var(--light);
+    text-decoration: none;
+}
+.icon-dark {
+    color: var(--dark);
+    font-size: 1.6rem;
+    display: none;
+    text-decoration: none;
+}
+
